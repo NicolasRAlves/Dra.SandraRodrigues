@@ -60,21 +60,26 @@ export const LpDraSandra = (): JSX.Element => {
         <main className="bg-[#000000] min-h-screen w-full">
 
 
-            <section className="w-full bg-cover bg-center min-h-screen bg-[url('./bg-fisio.png')] ">
-                <div
-                    className="mx-auto flex flex-col lg:flex-row items-center justify-between px-20 lg:px-32 md:px-52  gap-12 content-center absolute inset-0 bg-[#1c0f0a]/80 z-0">
+            {/*<section className="w-full bg-cover bg-center min-h-screen bg-[url('/bg-fisio.png')] ">*/}
+            {/*<section className="w-full bg-cover bg-center min-h-screen bg-[url('/Design%20sem%20nome.jpg')] ">*/}
+            <section className="w-full bg-cover bg-[position:70%_center] sm:bg-center min-h-screen bg-[url('/bg.svg')] relative">
+                <div className="absolute inset-0 bg-[#1c0f0a]/60 z-0" />
+
+                {/*className="mx-auto flex flex-col lg:flex-row items-center justify-between px-20 lg:px-32 md:px-52  gap-12 content-center absolute inset-0 bg-[#1c0f0a]/80 z-0">*/}
+                <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center content-center justify-center px-6 sm:px-10 md:px-20 gap-12 py-16">
+
+                    {/* Texto */}
                     <motion.div
-                        initial={{opacity: 0, x: 50}}
-                        whileInView={{opacity: 1, x: 0}}
-                        transition={{duration: 0.8}}
-                        viewport={{once: true}}
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
                         className="flex-1 flex flex-col items-start gap-10"
                     >
-                        <div className="flex items-center gap-3 mt-10">
-                            <GiHealing className="text-[#fefaf4] text-3xl"/>
+                        <div className="flex items-center gap-3 mt-6">
+                            <GiHealing className="text-[#fefaf4] text-3xl" />
                             <div>
-                                <div
-                                    className="text-[#fefaf4] text-[25px] font-semibold tracking-wide [font-family:'Recoleta-RegularDEMO',Helvetica]">
+                                <div className="text-[#fefaf4] text-[25px] font-semibold tracking-wide">
                                     SANDRA RODRIGUES
                                 </div>
                                 <div className="text-[#fefaf4] text-sm tracking-tight">
@@ -83,33 +88,31 @@ export const LpDraSandra = (): JSX.Element => {
                             </div>
                         </div>
 
-                        <h1 className="max-w-[720px]  text-4xl md:text-5xl font-bold leading-snug [font-family:'Recoleta-RegularDEMO',Helvetica] text-[#fefaf4]">
+                        <h1 className="max-w-[720px] text-4xl md:text-5xl font-bold leading-snug text-[#fefaf4]">
                             Está buscando um atendimento{" "}
                             <span className="text-[#d4ba76]">fisioterapêutico humanizado</span> e de qualidade?
                         </h1>
 
-                        <p className="max-w-[650px] text-[#fefaf4] text-1xl [font-family:'Recoleta-RegularDEMO',Helvetica] md:text-2xl">
-                            Com mais de 18 anos de experiência, atendo na Zona Sul de São Paulo com foco em
-                            reabilitação, alívio da dor e bem-estar. Atendimento domiciliar com técnicas
-                            personalizadas e humanizadas.
+                        <p className="max-w-[650px] text-[#fefaf4] text-lg md:text-2xl">
+                            Com mais de 18 anos de experiência, atendo na Zona Sul de São Paulo com foco em reabilitação, alívio da dor e bem-estar. Atendimento domiciliar com técnicas personalizadas e humanizadas.
                         </p>
 
                         <a
                             href="https://wa.me/5511939445414?text=Ol%C3%A1%2C%20Dra.%20Sandra!%20Encontrei%20seu%20site%20e%20gostaria%20de%20agendar%20um%20atendimento%20de%20fisioterapia."
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-nowrap items-center justify-center gap-3 px-6 py-3 sm:px-8 sm:py-3 rounded-lg text-[#532d18] text-base sm:text-lg font-bold [font-family:'Inter',Helvetica] bg-gradient-to-b from-[#f2deba] to-[#d4ba76] hover:brightness-110 transition w-full sm:w-fit"
+                            className="flex flex-nowrap items-center justify-center gap-3 px-6 py-3 sm:px-8 sm:py-3 rounded-lg text-[#532d18] text-base sm:text-lg font-bold bg-gradient-to-b from-[#f2deba] to-[#d4ba76] hover:brightness-110 transition w-full sm:w-fit"
                         >
                             <FaWhatsapp className="text-2xl sm:text-3xl" />
                             <span className="leading-tight text-center">FALAR COM DRA. SANDRA RODRIGUES</span>
                         </a>
-
-
                     </motion.div>
 
-                    <div className="hidden lg:block flex-1 h-[500px]"></div>
+                    {/* Espaço da imagem no desktop */}
+                    <div className="hidden lg:block flex-1 h-[400px]" />
                 </div>
             </section>
+
 
             <section
                 className="w-full py-16 px-4 sm:px-6 md:px-20 bg-gradient-to-b from-[#2e1c14] via-[#3e2a1f] to-[#5c4033]">
@@ -167,7 +170,7 @@ export const LpDraSandra = (): JSX.Element => {
                         <img
                             className="object-cover w-full h-full"
                             alt="Dra. Sandra Rodrigues"
-                            src="/fisioterapeuta.png"/>
+                            src="/IMG_1193_jpg.JPG"/>
                     </motion.div>
 
                     <motion.div
